@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F4C18238-43D9-4A41-9460-18C630E98058}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>farmerapp</RootNamespace>
+    <AssemblyName>farmerapp</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="1.jpg" />
+    <Content Include="2.jpg" />
+    <Content Include="3.jpg" />
+    <Content Include="4.jpg" />
+    <Content Include="5.jpg" />
+    <Content Include="6.jpg" />
+    <Content Include="7.jpg" />
+    <Content Include="8.jpg" />
+    <Content Include="9.jpg" />
+    <Content Include="Add Admin User.aspx" />
+    <Content Include="add_crop_to_experts.aspx" />
+    <Content Include="admin_change_password.aspx" />
+    <Content Include="admin_login.aspx" />
+    <Content Include="agriculture-3732476_1280.jpg" />
+    <Content Include="coast-3358815_1280.jpg" />
+    <Content Include="coast-3358820_1280.jpg" />
+    <Content Include="cropcategory.aspx" />
+    <Content Include="cropname.aspx" />
+    <Content Include="detailreply.aspx" />
+    <Content Include="experthome.aspx" />
+    <Content Include="expertqueries.aspx" />
+    <Content Include="experts.aspx" />
+    <Content Include="expert_change_password.aspx" />
+    <Content Include="expert_login.aspx" />
+    <Content Include="farmerlist.aspx" />
+    <Content Include="farmerquery.aspx" />
+    <Content Include="grass-3743023_1280.jpg" />
+    <Content Include="h.jpg" />
+    <Content Include="home.aspx" />
+    <Content Include="statecity.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Add Admin User.aspx.cs">
+      <DependentUpon>Add Admin User.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Add Admin User.aspx.designer.cs">
+      <DependentUpon>Add Admin User.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddData.ashx.cs">
+      <DependentUpon>AddData.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="add_crop_to_experts.aspx.cs">
+      <DependentUpon>add_crop_to_experts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="add_crop_to_experts.aspx.designer.cs">
+      <DependentUpon>add_crop_to_experts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin.Master.cs">
+      <DependentUpon>admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin.Master.designer.cs">
+      <DependentUpon>admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="admin_change_password.aspx.cs">
+      <DependentUpon>admin_change_password.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_change_password.aspx.designer.cs">
+      <DependentUpon>admin_change_password.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_login.aspx.cs">
+      <DependentUpon>admin_login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_login.aspx.designer.cs">
+      <DependentUpon>admin_login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cat.ashx.cs">
+      <DependentUpon>cat.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Class1.cs" />
+    <Compile Include="cropbycat.ashx.cs">
+      <DependentUpon>cropbycat.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="cropcategory.aspx.cs">
+      <DependentUpon>cropcategory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cropcategory.aspx.designer.cs">
+      <DependentUpon>cropcategory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cropname.aspx.cs">
+      <DependentUpon>cropname.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cropname.aspx.designer.cs">
+      <DependentUpon>cropname.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="detailreply.aspx.cs">
+      <DependentUpon>detailreply.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="detailreply.aspx.designer.cs">
+      <DependentUpon>detailreply.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="expert.Master.cs">
+      <DependentUpon>expert.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="expert.Master.designer.cs">
+      <DependentUpon>expert.Master</DependentUpon>
+    </Compile>
+    <Compile Include="experthome.aspx.cs">
+      <DependentUpon>experthome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="experthome.aspx.designer.cs">
+      <DependentUpon>experthome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="expertqueries.aspx.cs">
+      <DependentUpon>expertqueries.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="expertqueries.aspx.designer.cs">
+      <DependentUpon>expertqueries.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="experts.aspx.cs">
+      <DependentUpon>experts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="experts.aspx.designer.cs">
+      <DependentUpon>experts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="expert_change_password.aspx.cs">
+      <DependentUpon>expert_change_password.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="expert_change_password.aspx.designer.cs">
+      <DependentUpon>expert_change_password.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="expert_login.aspx.cs">
+      <DependentUpon>expert_login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="expert_login.aspx.designer.cs">
+      <DependentUpon>expert_login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Farmer.cs" />
+    <Compile Include="farmerlist.aspx.cs">
+      <DependentUpon>farmerlist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="farmerlist.aspx.designer.cs">
+      <DependentUpon>farmerlist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="farmerlogin.ashx.cs">
+      <DependentUpon>farmerlogin.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="farmerq.cs" />
+    <Compile Include="farmerquery.aspx.cs">
+      <DependentUpon>farmerquery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="farmerquery.aspx.designer.cs">
+      <DependentUpon>farmerquery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="farmer_reg.ashx.cs">
+      <DependentUpon>farmer_reg.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="getcity.ashx.cs">
+      <DependentUpon>getcity.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="getstate.ashx.cs">
+      <DependentUpon>getstate.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="home.aspx.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="home.aspx.designer.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="loadexpertreply.ashx.cs">
+      <DependentUpon>loadexpertreply.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="NQuery.cs" />
+    <Compile Include="operations.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="statecity.aspx.cs">
+      <DependentUpon>statecity.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="statecity.aspx.designer.cs">
+      <DependentUpon>statecity.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="admin.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="expert.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="farmerlogin.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="cat.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="cropbycat.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AddData.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="getstate.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="getcity.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="loadexpertreply.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="farmer_reg.ashx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49933</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
